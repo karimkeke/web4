@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Rental - Premium Furniture Rental Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Furniture Rental</h1>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#categories">Products</a>
+                <a href="#contact">Contact Us</a>
+                <button id="loginBtn" class="login-btn">Login</button>
+                <button id="registerBtn" class="register-btn">Register</button>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-backdrop"></div>
+
+    <!-- القسم الرئيسي -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Rent Furniture for Your Home Easily</h1>
+                <p class="hero-description">We offer a wide range of premium furniture rentals at affordable prices. Choose from our diverse collection of living rooms, bedrooms, and dining tables.</p>
+                <div class="hero-buttons">
+                    <a href="#categories" class="primary-btn">Browse Products</a>
+                    <a href="#contact" class="secondary-btn">Contact Us</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Quality Guarantee</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>Competitive Prices</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxurious Furniture">
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم المنتجات والتصنيفات -->
+    <section id="categories" class="products-section">
+        <div class="container">
+            <h2>Our Featured Products</h2>
+            
+            <!-- قائمة التصنيفات -->
+            <div class="categories-tabs">
+                <button class="tab-button active" data-category="all">All Products</button>
+                <button class="tab-button" data-category="living">Living Rooms</button>
+                <button class="tab-button" data-category="dining">Dining Tables</button>
+                <button class="tab-button" data-category="bedroom">Bedrooms</button>
+                <button class="tab-button" data-category="office">Office Furniture</button>
+            </div>
+
+            <!-- شبكة المنتجات -->
+            <div class="products-grid">
+                <!-- صالونات -->
+                <div class="product-card" data-category="living">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" alt="Luxurious Modern Living Room">
+                        <div class="product-overlay">
+                            <button class="rent-button">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxurious Modern Living Room</h3>
+                        <p class="price">3000 DA/day</p>
+                        <p class="description">Elegant modern living room perfect for events and weddings</p>
+                    </div>
+                </div>
+
+                <!-- طاولات -->
+                <div class="product-card" data-category="dining">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200" alt="Elegant Dining Table">
+                        <div class="product-overlay">
+                            <button class="rent-button">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Dining Table</h3>
+                        <p class="price">2500 DA/day</p>
+                        <p class="description">Modern dining table seating 8</p>
+                    </div>
+                </div>
+
+                <!-- غرف نوم -->
+                <div class="product-card" data-category="bedroom">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c" alt="Regal Bedroom">
+                        <div class="product-overlay">
+                            <button class="rent-button">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Regal Bedroom</h3>
+                        <p class="price">4000 DA/day</p>
+                        <p class="description">Luxury bedroom with modern design</p>
+                    </div>
+                </div>
+
+                <!-- أثاث مكتبي -->
+                <div class="product-card" data-category="office">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36" alt="Executive Office">
+                        <div class="product-overlay">
+                            <button class="rent-button">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Executive Office</h3>
+                        <p class="price">2000 DA/day</p>
+                        <p class="description">Modern office with a comfortable work chair</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قائمة الحجوزات -->
+    <section id="bookings" class="bookings-section">
+        <div class="container">
+            <h2>My Bookings</h2>
+            <div class="bookings-list" id="bookingsList">
+                <!-- سيتم إضافة الحجوزات هنا عن طريق JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الاتصال -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We're here to help! Send us a message and we'll get back to you shortly</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Call Us</h3>
+                        <p>0555-123-456</p>
+                        <p>0666-789-012</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@furniture-rental.com</p>
+                        <p>support@furniture-rental.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <h3>Our Location</h3>
+                        <p>Algiers, Algeria</p>
+                        <p>El Arabi Ben Mehidi Street</p>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <select id="city" required>
+                                <option value="">Select City</option>
+                                <option value="algiers">Algiers</option>
+                                <option value="oran">Oran</option>
+                                <option value="constantine">Constantine</option>
+                                <option value="annaba">Annaba</option>
+                                <option value="setif">Setif</option>
+                                <option value="batna">Batna</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الحجز -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Booking Form</h2>
+                <button class="close-modal" onclick="closeRentModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="product-preview">
+                    <img id="modalProductImage" src="" alt="Product Image">
+                    <div class="product-info">
+                        <h3 id="modalProductName"></h3>
+                        <p id="modalProductPrice" class="price"></p>
+                    </div>
+                </div>
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <label for="rentName">Full Name</label>
+                        <input type="text" id="rentName" name="rentName" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="rentPhone">Phone Number</label>
+                        <input type="tel" id="rentPhone" name="rentPhone" placeholder="05XXXXXXXX" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="rentDuration">Rental Duration (days)</label>
+                        <input type="number" id="rentDuration" name="rentDuration" min="1" value="1" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="rentDate">Rental Date</label>
+                        <input type="date" id="rentDate" name="rentDate" required>
+                    </div>
+                    <div class="price-summary">
+                        <span>Total Price:</span>
+                        <span id="totalPrice">0 DA</span>
+                    </div>
+                    <button type="submit" class="submit-btn">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة التسجيل -->
+    <div class="modal-overlay" id="registerModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Register New Account</h2>
+                <button class="close-modal" onclick="closeRegisterModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm" class="register-form">
+                    <div class="form-row">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="city">City</label>
+                        <select id="city" name="city" required>
+                            <option value="">Select City</option>
+                            <option value="adrar">Adrar</option>
+                            <option value="chlef">Chlef</option>
+                            <option value="laghouat">Laghouat</option>
+                            <option value="oum-el-bouaghi">Oum El Bouaghi</option>
+                            <option value="batna">Batna</option>
+                            <option value="bejaia">Bejaia</option>
+                            <option value="biskra">Biskra</option>
+                            <option value="bechar">Bechar</option>
+                            <option value="blida">Blida</option>
+                            <option value="bouira">Bouira</option>
+                            <option value="tamanrasset">Tamanrasset</option>
+                            <option value="tebessa">Tebessa</option>
+                            <option value="tlemcen">Tlemcen</option>
+                            <option value="tiaret">Tiaret</option>
+                            <option value="tizi-ouzou">Tizi Ouzou</option>
+                            <option value="algiers">Algiers</option>
+                            <option value="djelfa">Djelfa</option>
+                            <option value="jijel">Jijel</option>
+                            <option value="setif">Setif</option>
+                            <option value="saida">Saida</option>
+                            <option value="skikda">Skikda</option>
+                            <option value="sidi-bel-abbes">Sidi Bel Abbes</option>
+                            <option value="annaba">Annaba</option>
+                            <option value="guelma">Guelma</option>
+                            <option value="constantine">Constantine</option>
+                            <option value="medea">Medea</option>
+                            <option value="mostaganem">Mostaganem</option>
+                            <option value="msila">Msila</option>
+                            <option value="mascara">Mascara</option>
+                            <option value="ouargla">Ouargla</option>
+                            <option value="oran">Oran</option>
+                            <option value="el-bayadh">El Bayadh</option>
+                            <option value="illizi">Illizi</option>
+                            <option value="bordj-bou-arreridj">Bordj Bou Arreridj</option>
+                            <option value="boumerdes">Boumerdes</option>
+                            <option value="el-tarf">El Tarf</option>
+                            <option value="tindouf">Tindouf</option>
+                            <option value="tissemsilt">Tissemsilt</option>
+                            <option value="el-oued">El Oued</option>
+                            <option value="khenchela">Khenchela</option>
+                            <option value="souk-ahras">Souk Ahras</option>
+                            <option value="tipaza">Tipaza</option>
+                            <option value="mila">Mila</option>
+                            <option value="ain-defla">Ain Defla</option>
+                            <option value="naama">Naama</option>
+                            <option value="ain-temouchent">Ain Temouchent</option>
+                            <option value="ghardaia">Ghardaia</option>
+                            <option value="relizane">Relizane</option>
+                            <option value="timimoun">Timimoun</option>
+                            <option value="bordj-badji-mokhtar">Bordj Badji Mokhtar</option>
+                            <option value="ouled-djellal">Ouled Djellal</option>
+                            <option value="beni-abbes">Beni Abbes</option>
+                            <option value="in-salah">In Salah</option>
+                            <option value="in-guezzam">In Guezzam</option>
+                            <option value="touggourt">Touggourt</option>
+                            <option value="djanet">Djanet</option>
+                            <option value="el-meghaier">El Meghaier</option>
+                            <option value="el-meniaa">El Meniaa</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Register Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة الدخول -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Login</h2>
+                <button class="close-modal" onclick="closeLoginModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" class="login-form">
+                    <div class="form-row">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" name="loginEmail" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="loginPassword" required>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="submit-btn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +213 XX XXX XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@furniture-rental.dz</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Furniture Rental. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
